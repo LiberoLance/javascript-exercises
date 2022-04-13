@@ -1,6 +1,6 @@
 const reverseString = function(str) {
   let rtrstr = '';
-  for(i = str.length; i >= 0; i--) {
+  for(let i = str.length; i >= 0; i--) {
     rtrstr += str.charAt[i];
   }
   return rtrstr;
