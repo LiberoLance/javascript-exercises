@@ -1,6 +1,12 @@
 const sumAll = function(startNum, endNum) {
   let sum = 0;
-  for(let i = startNum; i <= endNum; i++){
+  if(startNum > endNum) {
+    let swap = startNum;
+    startNum = endNum;
+    endNum = swap;
+  }
+ 
+  for(let i = startNum; i <= endNum; i++) {
     sum += i;
   }
   return sum;
