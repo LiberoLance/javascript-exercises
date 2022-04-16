@@ -1,8 +1,8 @@
-const removeFromArray = function(array, ...rmvelem) {
-  if(array.includes(rmvelem)) {
-    for(let i = 0; i < array.length - 1; i++) {
-      if(array[i] === rmvelem[i]) {
-        array.splice(i,1);
+const removeFromArray = function(array, ...removeArray) {
+  for(let i = 0; i < removeArray.length; i++) {
+    for(let j = 0; j < array.length; j++) {
+      if(removeArray[i] === array[j]) {
+        array.splice(j, 1);
       }
     }
   }
