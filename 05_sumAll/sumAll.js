@@ -1,7 +1,7 @@
 const sumAll = function(startNum, endNum) {
   let sum = 0;
 
-  if(isNaN(startNum) || isNaN(endNum) || startNum < 0 || endNum < 0) {
+  if(typeof(startNum) != "number" || typeof(endNum) != "number" || startNum < 0 || endNum < 0) {
     return 'ERROR';
   }
 
