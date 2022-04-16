@@ -1,4 +1,5 @@
 const removeFromArray = function(array, ...rmvelem) {
+  console.log(rmvelem);
   if(array.includes(rmvelem)) {
     for(let i = 0; i < array.length - 1; i++) {
       if(array[i] === rmvelem) {
@@ -6,7 +7,6 @@ const removeFromArray = function(array, ...rmvelem) {
       }
     }
   }
-  console.log(array);
   return array;
 };
 
