@@ -1,8 +1,7 @@
 const removeFromArray = function(array, ...rmvelem) {
-  console.log(rmvelem);
   if(array.includes(rmvelem)) {
     for(let i = 0; i < array.length - 1; i++) {
-      if(array[i] === rmvelem) {
+      if(array[i] === rmvelem[i]) {
         array.splice(i,1);
       }
     }
