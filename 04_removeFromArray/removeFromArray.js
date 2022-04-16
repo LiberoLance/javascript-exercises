@@ -6,6 +6,7 @@ const removeFromArray = function(array, ...rmvelem) {
       }
     }
   }
+  console.log(array);
   return array;
 };
 
