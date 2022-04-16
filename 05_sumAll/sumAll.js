@@ -1,5 +1,10 @@
 const sumAll = function(startNum, endNum) {
   let sum = 0;
+
+  if(isNaN(startNum) || isNaN(endNum) || startNum < 0 || endNum < 0) {
+    return 'ERROR';
+  }
+
   if(startNum > endNum) {
     let swap = startNum;
     startNum = endNum;
