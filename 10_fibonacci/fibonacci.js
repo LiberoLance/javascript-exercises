@@ -6,7 +6,7 @@ const fibonacci = function(x) {
 		fib = 'OOPS';	
 	}
 	else {
-		fib = Math.round(((Math.pow(gr, x) - Math.pow((1 - gr), x)) / Math.sqrt(5)));
+		fib = Math.floor(((Math.pow(gr, x) - Math.pow((1 - gr), x)) / Math.sqrt(5)));
 	}
 	return fib;
 };
