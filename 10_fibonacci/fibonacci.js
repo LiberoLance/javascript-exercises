@@ -1,6 +1,14 @@
 const fibonacci = function(x) {
-	const gr = 1.618035; 
-	return Math.round(((Math.pow(gr, x) - Math.pow((1 - gr), x)) / Math.sqrt(5)));
+	let fib = 0;
+	const gr = 1.618035;
+
+	if(x < 0){
+		fib = 'OOPS';	
+	}
+
+	fib = Math.round(((Math.pow(gr, x) - Math.pow((1 - gr), x)) / Math.sqrt(5)));
+
+	return fib;
 };
 
 // Do not edit below this line
