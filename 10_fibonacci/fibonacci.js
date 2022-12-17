@@ -1,5 +1,5 @@
 const fibonacci = function(x) {
-	return (x-1) + (x -2);
+	return (x - 2) + (x - 3);
 };
 
 // Do not edit below this line
