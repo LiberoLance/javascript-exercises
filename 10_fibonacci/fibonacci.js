@@ -1,12 +1,12 @@
 const fibonacci = function(x) {
 	let fib = 0;
-	const gr = 1.618035;
+	const gr = 1.61803399;
 
 	if(x < 0){
 		fib = 'OOPS';	
 	}
 	else {
-		fib = Math.floor(((Math.pow(gr, x) - Math.pow((1 - gr), x)) / Math.sqrt(5)));
+		fib = Math.round(((Math.pow(gr, x) - Math.pow((1 - gr), x)) / Math.sqrt(5)));
 	}
 	return fib;
 };
